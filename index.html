@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>catherinewg</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__home" href="#top">catherinewg</a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#kindred">Kindred</a>
+      <a href="#writing">Writing</a>
+      <a class="nav__pill" href="#hua-yang">花樣年華</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- 1. HERO — pinned; vertical scroll drives a horizontal pan across the name -->
+    <section class="hero" aria-label="Hi, I'm Catherine Wang">
+      <div class="hero__canvas">
+        <p class="hero__hi">hi, i’m</p>
+        <h1 class="hero__name"><span>catherine</span> <span>wang</span></h1>
+        <p class="hero__slur">non-t*chnical (slur)</p>
+      </div>
+    </section>
+
+    <!-- 2. INTRODUCTION — scroll-linked "lyrics" highlight -->
+    <section class="intro" id="about">
+      <div class="intro__text" data-highlight>
+        <p>I believe there are limits to what can be known in abstraction and that radical truth requires building the core skills of <a href="#writing">life intensification</a> and <a href="#writing">staring into the abyss.</a></p>
+        <p>I work across product, strategy, and tech. I like making things, personal writing, and internet rabbit-holing.</p>
+        <p>I’m endlessly curious about human behavior and agency, ego and consciousness, spirituality, philosophy, social infrastructure, language, and metaphysics.</p>
+      </div>
+    </section>
+
+    <!-- 3. DRINK CAROUSEL — reached by plain scrolling; its top peeks under the intro -->
+    <section class="bar" aria-roledescription="carousel" aria-label="Drinks">
+      <h2 class="bar__title">welcome! have a seat,<br />have a drink:</h2>
+
+      <div class="bar__stage" tabindex="0" aria-label="Drink carousel. Use left and right arrow keys to browse.">
+        <ul class="bar__track"></ul>
+      </div>
+
+      <p class="bar__caption" aria-live="polite">
+        <span class="bar__name"></span>
+        <a class="bar__pair" href="#"></a>
+      </p>
+
+      <div class="bar__dots" role="tablist" aria-label="Choose a drink"></div>
+    </section>
+
+    <!-- 4. Further sections — stand-ins for the existing site content -->
+    <section class="stub" id="work"><h2>work</h2><p>Existing Work section goes here.</p></section>
+    <section class="stub" id="kindred"><h2>kindred</h2><p>Existing Kindred (koi) section goes here.</p></section>
+    <section class="stub" id="writing"><h2>writing</h2><p>Existing Writing section goes here.</p></section>
+    <section class="stub" id="hua-yang"><h2>花樣年華</h2><p>Existing photography / links section goes here.</p></section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
